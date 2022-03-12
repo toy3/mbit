@@ -11,7 +11,7 @@
 }
 
 body {
-  margin: 98px auto 0;
+  margin: 140px auto 0;
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
   background: #f7f1c0;
@@ -31,7 +31,7 @@ a {
 }
 
 .intro-container h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 55px;
   font-weight: 700;
   font-family: "GmarketSansBold";
@@ -41,11 +41,11 @@ a {
   color: #9b51e0;
   font-weight: 500;
   font-size: 18px;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .intro-container strong {
-  margin-bottom: 36px;
+  margin-bottom: 70px;
   font-size: 16px;
   font-weight: 700;
 }
@@ -54,7 +54,7 @@ a {
   width: 270px;
   height: 267px;
   display: block;
-  margin-bottom: 36px;
+  margin-bottom: 100px;
 }
 
 .intro-container button {
@@ -66,4 +66,88 @@ a {
   font-size: 16px;
   color: #9b51e0;
   font-weight: 900;
+}
+
+/* 질문 */
+#question-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.question-item {
+  display: none;
+  width: 100%;
+}
+
+.question-item.on {
+  display: block;
+}
+
+/* 상태바 */
+.status-box {
+  background: #ffff;
+  position: relative;
+}
+
+.status-box span {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  color: #9b51e0;
+  font-size: 18px;
+}
+
+.status-bar {
+  height: 6px;
+  background: #9b51e0;
+}
+
+/* 문제 */
+.question-box h2 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 40px 0px 30px 0px;
+}
+
+/* 답변 */
+.question-box .answer-list {
+  margin-bottom: 36px;
+}
+
+.question-box .answer-item {
+  font-size: 16px;
+  line-height: 23px;
+  list-style: none;
+  margin-bottom: 12px;
+  text-indent: -22px;
+  margin: 0 0 12px 22px;
+}
+
+.question-box input,
+.question-box label {
+  cursor: pointer;
+}
+
+/* 버튼 */
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.button-box button {
+  width: 100px;
+  height: 40px;
+  background: #9b51e0;
+  font-weight: 900;
+  font-size: 16px;
+  color: #ffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-box.style-center {
+  justify-content: center;
 }

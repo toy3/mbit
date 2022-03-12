@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>나의 MBIT</title>
+  </head>
+  <body>
+    <form method="post" id="question-form" action="/submit">
+      <div class="question-item">
+        <div class="status-box">
+          <span> 1/10 </span>
+          <div class="status-bar"></div>
+        </div>
+        <div class="question-box">
+          <h2>Q. 당신이 가장 재밌었던 수업은?</h2>
+          <ol class="answer-list">
+            <li class="answer-item">
+              <input type="radio" id="answer-1" name="question-1" value="5" />
+              <label for="answer-1">1. 게임 개발(유니티, 언리얼, Pygame)</label>
+            </li>
+            <li class="answer-item">
+              <input type="radio" id="answer-2" name="question-1" value="1" />
+              <label for="answer-2"
+                >2. 백엔드 또는 인프라(C계열-닷넷, JAVA-Spring, Python-Django,
+                Network, Ubuntu, CentOS, 부하분산, etc)</label
+              >
+            </li>
+            <li class="answer-item">
+              <input type="radio" id="answer-3" name="question-1" value="4" />
+              <label for="answer-3">3. 정보보안(해킹과 방어)</label>
+            </li>
+            <li class="answer-item">
+              <input type="radio" id="answer-4" name="question-1" value="2" />
+              <label for="answer-4"
+                >4. 프론트엔드(HTML, CSS, Javascript, etc)</label
+              >
+            </li>
+            <li class="answer-item">
+              <input type="radio" id="answer-5" name="question-1" value="3" />
+              <label for="answer-5"
+                >5. 데이터 분석과 인공지능(전처리, 분석, 시각화, 머신러닝,
+                딥러닝)</label
+              >
+            </li>
+          </ol>
+        </div>
+        <div class="button-box">
+          <button type="button" class="previous-btn">이전</button>
+          <button type="button" class="next-btn">다음</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
