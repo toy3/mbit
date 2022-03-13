@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -31,6 +32,6 @@ app.get("/result/[1-5]", (req, res) => {
   res.sendFile(path.join(__dirname, "src/component/result.html"));
 });
 
-app.listen(3000, () => {
-  console.log("Server running on 3000!");
+app.listen(port, () => {
+  console.log(`express is running on ${port}`);
 });
