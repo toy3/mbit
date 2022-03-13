@@ -14,9 +14,17 @@ app.get("/question", (req, res) => {
   res.sendFile(path.join(__dirname, "src/component/question.html"));
 });
 
-app.get("/submit", (req, res) => {
+app.post("/submit", (req, res) => {
+  const data = req.body;
+  const values = Object.values(data);
+  let emptyArr = Array(5).fill(0);
   let maxValueIndex = 0;
-  res.redirect("/result/" + (maxValueIndex + 1));
+
+  for (let value of values) {
+    emptyArr[value - 1]++;
+  }
+  maxValueIndex = emptyArr.indexOf(Math.max(...emptyArr)) + 1;
+  res.redirect("/result/" + maxValueIndex);
 });
 
 app.get("/result/[1-5]", (req, res) => {
